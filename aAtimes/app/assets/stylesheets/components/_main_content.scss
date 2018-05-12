@@ -1,0 +1,52 @@
+.main_content {
+  display: flex;
+  align-items: top;
+
+  a {
+     text-decoration: none;
+  }
+  .col-1{
+    width: 30%;
+    #TopNews{
+      font-style: italic;
+      font-weight:bold;
+      font-size: 30px;
+      color: black;
+    }
+    ul {
+      margin: 10px;
+      li {
+        list-style: disc;
+      }
+    }
+  }
+
+  .col-2{
+    width: 40%;
+
+    a {
+      font-weight:bold;
+      font-size: 17px;
+      color: black;
+      padding: 5px
+    }
+
+    div{
+      padding: 5px;
+    }
+  }
+
+  .col-3{
+    width:30%;
+  }
+}
+
+#lightp{
+  color: gray;
+}
+
+@media all and (max-width: 1000px) {
+  [class*='col-'] {
+    width: 100%;
+  }
+}
